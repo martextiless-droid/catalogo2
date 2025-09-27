@@ -1,4 +1,4 @@
-const pageFlip = new StPageFlip(document.getElementById("catalog"), {
+const pageFlip = new PageFlip(document.getElementById("catalog"), {
   width: 600,
   height: 800,
   size: "stretch",
