@@ -1,11 +1,14 @@
-// Espera a que el documento esté completamente cargado
-$(document).ready(function() {
-    // Inicializa el plugin Turn.js en el contenedor #catalog-book
+// CÓDIGO CORREGIDO PARA ESPERAR A LAS IMÁGENES
+$(window).on('load', function() {
+    
     $('#catalog-book').turn({
-        width: 800, // Debe coincidir con el CSS
-        height: 600, // Debe coincidir con el CSS
+        width: 800,
+        height: 600,
         autoCenter: true,
-        display: 'double', // Muestra dos páginas a la vez
-        acceleration: true // Usa aceleración por hardware (mejora rendimiento)
+        display: 'double',
+        acceleration: true
+    }).bind('turned', function(event, page) {
+        // Esta línea confirma que la librería está activa
+        console.log('Página volteada a: ' + page);
     });
 });
