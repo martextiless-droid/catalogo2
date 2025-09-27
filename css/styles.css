@@ -1,6 +1,10 @@
 body {
-    background-color: #f0f0f0;
+    background-color: #F0F0F0;
     margin: 0;
+    /* ESTAS TRES LÍNEAS DEBEN ESTAR ELIMINADAS O COMENTADAS EN EL BODY:
+    display: flex;
+    justify-content: center;
+    align-items: center; */
     min-height: 100vh;
 }
 
