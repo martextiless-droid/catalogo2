@@ -1,16 +1,11 @@
-const pageFlip = new PageFlip(document.getElementById("catalog"), {
-  width: 600,
-  height: 800,
-  size: "stretch",
-  minWidth: 315,
-  maxWidth: 1000,
-  maxHeight: 1350,
-  showCover: true,
-  mobileScrollSupport: false
+// Espera a que el documento esté completamente cargado
+$(document).ready(function() {
+    // Inicializa el plugin Turn.js en el contenedor #catalog-book
+    $('#catalog-book').turn({
+        width: 800, // Debe coincidir con el CSS
+        height: 600, // Debe coincidir con el CSS
+        autoCenter: true,
+        display: 'double', // Muestra dos páginas a la vez
+        acceleration: true // Usa aceleración por hardware (mejora rendimiento)
+    });
 });
-
-pageFlip.loadFromImages([
-  "assets/pagina1.png",  // Asegúrate de tener imágenes en esta carpeta
-  "assets/pagina2.jpg",
-  "assets/pagina3.jpg"
-]);

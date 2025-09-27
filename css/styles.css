@@ -1,16 +1,26 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f4f4f4;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-#catalog {
-  width: 600px;
-  height: 800px;
-  border: 1px solid #ccc;
+/* Estilo para el contenedor del catálogo */
+#catalog-book {
+    width: 800px; /* Ancho total (dos páginas) */
+    height: 600px; /* Altura de la página */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para cada página individual */
+.page {
+    background-color: white;
+}
+
+.page img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra toda la página */
 }
