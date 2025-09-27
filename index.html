@@ -1,0 +1,30 @@
+<div id="catalog"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
+<script>
+  const pageFlip = new St.PageFlip(document.getElementById("catalog"), {
+    width: 600,  // ancho de página
+    height: 800, // alto de página
+    size: "stretch",
+    minWidth: 315,
+    maxWidth: 1000,
+    maxHeight: 1350,
+    showCover: true,
+    mobileScrollSupport: false
+  });
+
+  pageFlip.loadFromImages([
+    "catalogo/pagina1.jpg",
+    "catalogo/pagina2.jpg",
+    "catalogo/pagina3.jpg",
+    "catalogo/pagina4.jpg",
+    "catalogo/pagina5.jpg",
+    "catalogo/pagina6.jpg",
+    "catalogo/pagina7.jpg",
+    "catalogo/pagina8.jpg",
+    "catalogo/pagina9.jpg",
+    "catalogo/pagina10.jpg",
+    "catalogo/pagina11.jpg",
+    "catalogo/pagina12.jpg"
+  ]);
+</script>
